@@ -9,6 +9,7 @@ export default function Controls({ styles, textStyles, label, onPressControl }) 
   return (
     <TouchableOpacity
       onPress={() => onPressControl()}
+      hitSlop={{ top: 20, bottom: 20, left: 50, right: 50 }}
     >
       <Text style={[styles, textStyles]}>
         { label }
